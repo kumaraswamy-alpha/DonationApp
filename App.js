@@ -4,7 +4,7 @@ import React from 'react';
 const App = () => {
   return (
     <View>
-      <Text>DonationApp</Text>
+      <Text style={{fontFamily: 'Inter-SemiBold', fontSize:20}}>DonationApp</Text>
     </View>
   );
 };
