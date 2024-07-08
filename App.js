@@ -1,11 +1,13 @@
 import {View, Text} from 'react-native';
 import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import MainNavigation from './navigation/MainNavigation';
 
 const App = () => {
   return (
-    <View>
-      <Text style={{fontFamily: 'Inter-SemiBold', fontSize:20}}>DonationApp</Text>
-    </View>
+    <NavigationContainer>
+      <MainNavigation />
+    </NavigationContainer>
   );
 };
 
