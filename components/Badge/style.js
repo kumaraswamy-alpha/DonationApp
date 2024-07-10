@@ -13,9 +13,8 @@ const style = StyleSheet.create({
     borderRadius: horizontalScale(50),
   },
   title: {
-    fontFamily: 'Inter',
+    fontFamily: 'Inter-SemiBold',
     fontSize: scaleFontSize(10),
-    fontWeight: '600',
     lineHeight: scaleFontSize(12),
     color: '#FFFFFF',
     textAlign: 'center',

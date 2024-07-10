@@ -7,7 +7,7 @@ import {scaleFontSize} from '../../assets/styles/scaling';
 
 import style from './style';
 
-const Search = props => {
+const Search = ({onSearch = () => {}, placeholder = 'Search'}) => {
   const textInputRef = useRef(null);
   const [search, setSearch] = useState('');
 
@@ -17,8 +17,9 @@ const Search = props => {
 
   const handleSearch = searchValue => {
     setSearch(searchValue);
-    props.onSearch(searchValue);
+    onSearch(searchValue);
   };
+
   return (
     <Pressable style={style.searchInputContainer} onPress={handleFocus}>
       <FontAwesomeIcon
@@ -27,6 +28,7 @@ const Search = props => {
         size={scaleFontSize(22)}
       />
       <TextInput
+        placeholder={placeholder}
         ref={textInputRef}
         style={style.searchInput}
         value={search}
@@ -36,12 +38,9 @@ const Search = props => {
   );
 };
 
-Search.default = {
-  onSearch: () => {},
-};
-
 Search.propTypes = {
-  onPress: PropTypes.func,
+  onSearch: PropTypes.func,
+  placeholder: PropTypes.string,
 };
 
 export default Search;

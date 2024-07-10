@@ -26,7 +26,7 @@ const Badge = props => {
 };
 
 Badge.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 };
 
 export default Badge;
