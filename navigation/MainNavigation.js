@@ -8,7 +8,7 @@ import Registration from '../screens/Registration/Registration';
 
 const Stack = createStackNavigator();
 
-const MainNavigation = () => {
+export const NonAuthenticated = () => {
   return (
     <Stack.Navigator
       initialRouteName={Routes.Login}
@@ -24,4 +24,16 @@ const MainNavigation = () => {
   );
 };
 
-export default MainNavigation;
+export const Authenticated = () => {
+  return (
+    <Stack.Navigator
+      initialRouteName={Routes.Home}
+      screenOptions={{header: () => null, headerShown: false}}>
+      <Stack.Screen name={Routes.Home} component={Home} />
+      <Stack.Screen
+        name={Routes.SingleDonationItem}
+        component={SingleDonationItem}
+      />
+    </Stack.Navigator>
+  );
+};

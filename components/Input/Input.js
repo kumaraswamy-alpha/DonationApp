@@ -23,7 +23,7 @@ const Input = props => {
   );
 };
 
-Input.defaultProps = {
+Input.default = {
   onChangeText: () => {},
   keyboardType: 'default',
   secureTextEntry: false,

@@ -3,8 +3,7 @@ import {scaleFontSize, verticalScale} from '../../assets/styles/scaling';
 
 const style = StyleSheet.create({
   label: {
-    fontFamily: 'Inter',
-    fontWeight: '400',
+    fontFamily: 'Inter-Regular',
     color: '#36455A',
     fontSize: scaleFontSize(12),
     lineHeight: scaleFontSize(15),
