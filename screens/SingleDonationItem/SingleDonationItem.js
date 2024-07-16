@@ -5,6 +5,7 @@ import BackButton from '../../components/BackButton/BackButton';
 import Badge from '../../components/Badge/Badge';
 import Header from '../../components/Header/Header';
 import Button from '../../components/Button/Button';
+import {Routes} from '../../navigation/Routes';
 
 import style from './style';
 import globalStyle from '../../assets/styles/globalStyle';
@@ -28,16 +29,13 @@ const SingleDonationItem = ({navigation, route}) => {
         <Header type={1} title={donationItemInformation.name} />
         <Text style={style.description}>
           {donationItemInformation.description}
-          {donationItemInformation.description}
-          {donationItemInformation.description}
-          {donationItemInformation.description}
-          {donationItemInformation.description}
-          {donationItemInformation.description}
-          {donationItemInformation.description}
         </Text>
       </ScrollView>
       <View style={style.button}>
-        <Button title={'Donate'} />
+        <Button
+          title={'Donate'}
+          onPress={() => navigation.navigate(Routes.Payment)}
+        />
       </View>
     </SafeAreaView>
   );

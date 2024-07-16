@@ -23,6 +23,7 @@
 		34BBFC8F6F154F908F18B917 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9ECB1A6040E42B98037EC95 /* Inter-Regular.ttf */; };
 		70F8FCE220644C62940AFB25 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95CB1C6AFE0E4F8EA8C9AD46 /* Inter-SemiBold.ttf */; };
 		71AF51D1B19448C0984DF406 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44F73908D2A54E298EC8276A /* Inter-Thin.ttf */; };
+		C29160C15E3A4232A3C8EC00 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355FDE491324407EAB1169F0 /* BootSplash.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		D9ECB1A6040E42B98037EC95 /* Inter-Regular.ttf */ = {isa = PBXFileReference; name = "Inter-Regular.ttf"; path = "../assets/fonts/Inter-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		95CB1C6AFE0E4F8EA8C9AD46 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; name = "Inter-SemiBold.ttf"; path = "../assets/fonts/Inter-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		44F73908D2A54E298EC8276A /* Inter-Thin.ttf */ = {isa = PBXFileReference; name = "Inter-Thin.ttf"; path = "../assets/fonts/Inter-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		355FDE491324407EAB1169F0 /* BootSplash.storyboard */ = {isa = PBXFileReference; name = "BootSplash.storyboard"; path = "DonationApp/BootSplash.storyboard"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				355FDE491324407EAB1169F0 /* BootSplash.storyboard */,
 			);
 			name = DonationApp;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				34BBFC8F6F154F908F18B917 /* Inter-Regular.ttf in Resources */,
 				70F8FCE220644C62940AFB25 /* Inter-SemiBold.ttf in Resources */,
 				71AF51D1B19448C0984DF406 /* Inter-Thin.ttf in Resources */,
+				C29160C15E3A4232A3C8EC00 /* BootSplash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
